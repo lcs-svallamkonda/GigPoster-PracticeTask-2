@@ -34,6 +34,17 @@ let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
 
 // Begin your solution here...
 
+//Draw a reference grid
+
+//horizontal lines
+for y in stride(from: 0, through: 600, by: 50) {
+    canvas.drawLine(from: Point(x: 0, y: y), to: Point(x: 400, y: y))
+}
+
+//vertical lines
+for x in stride(from: 0, through: 400, by: 50) {
+    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
+}
 
 /*:
  ## Use Source Control
